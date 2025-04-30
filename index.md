@@ -1,5 +1,13 @@
 ---
-layout: post
-title: "Databases in Large-Scale System Design: An Engineering Deep Dive"
-tags: [databases, system-design]
+layout: default
+title: Home
 ---
+
+## SerialReads
+
+Welcome to my reading log.
+
+### Recent posts
+{% for post in site.posts limit:5 %}
+* [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%b %d, %Y" }}
+{% endfor %}
