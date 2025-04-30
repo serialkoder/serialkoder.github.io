@@ -1,8 +1,5 @@
 ---
-layout: default
-title: Home
+layout: post
+title: "Databases in Large-Scale System Design: An Engineering Deep Dive"
+tags: [databases, system-design]
 ---
-
-## Coming Soon
-
-My personal reading notebook will live here.
