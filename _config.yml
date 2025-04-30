@@ -1,0 +1,5 @@
+title: "SerialReads"                       # site title (shows in header & <title>)
+description: "Deep-dive reading log & research notes"
+remote_theme: pages-themes/primer@v0.7.0   # GitHub’s clean “Primer” theme
+plugins:
+  - jekyll-remote-theme                    # lets Pages pull the theme
