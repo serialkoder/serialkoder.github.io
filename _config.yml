@@ -1,10 +1,8 @@
 title: "SerialReads"
 description: "Deep-dive reading log & research notes"
 
-# either of these works – pick ONE
-remote_theme: pages-themes/primer          # no version pin
-# remote_theme: pages-themes/primer@v0.6.0 # explicit, valid tag
+remote_theme: pages-themes/primer          # clean GitHub Pages theme
 
+markdown: CommonMarkGhPages                # ← switch renderer
 plugins:
   - jekyll-remote-theme
-markdown: CommonMarkGhPages
