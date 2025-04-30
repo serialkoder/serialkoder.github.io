@@ -4,7 +4,6 @@ title: "Databases in Large-Scale System Design: An Engineering Deep Dive"
 tags: [databases, system-design]
 ---
 
-<div markdown="1">
 # Databases in Large-Scale System Design: An Engineering Deep Dive
 
 ## Historical Evolution and Types of Databases
@@ -162,4 +161,3 @@ In conclusion, emerging technologies aim to make databases **more flexible, glob
 - Amazon’s Dynamo for shopping cart (NoSQL AP design)  
 - Uber’s polyglot database usage (Schemaless on MySQL, plus Riak/Cassandra) ([System Design of Uber App | Uber System Architecture | GeeksforGeeks](https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/#:~:text=Earlier%20Uber%20was%20using%20the,top%20of%20the%20MySQL%20database))  
 - HTAP definition and examples (TiDB, AlloyDB) ([HTAP Demystified: Defining a Modern Data Architecture](https://www.pingcap.com/blog/htap-demystified-defining-modern-data-architecture-tidb/#:~:text=A%20Hybrid%20Transactional%20and%20Analytical,capabilities%2C%20such%20as%20SAP%20HANA)) ([HTAP Demystified: Defining a Modern Data Architecture](https://www.pingcap.com/blog/htap-demystified-defining-modern-data-architecture-tidb/#:~:text=However%2C%20technical%20challenges%20have%20prevented,is%20HTAP%20on%20the%20rise))
-</div>
