@@ -7,3 +7,4 @@ remote_theme: pages-themes/primer          # no version pin
 
 plugins:
   - jekyll-remote-theme
+markdown: CommonMarkGhPages
