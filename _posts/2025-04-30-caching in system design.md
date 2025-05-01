@@ -4,7 +4,7 @@ title: "Caching in System Design"
 tags: [system-design]
 ---
 
-https://chatgpt.com/c/6812eec4-eb7c-8003-9b68-ae391cb9e317
+
 
 Great! I’ll compile a structured, high-level report on caching in system design, covering core principles, practical applications, and real-world strategies. The report will include clear headers, concise examples, and visual aids (like diagrams and tables) where appropriate to enhance understanding and recall.
 
