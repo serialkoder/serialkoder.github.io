@@ -1,9 +1,9 @@
-
 ---
 layout: post
 title: "Overview of Key Software Architecture Concepts"
 tags: [software-architecture]
 ---
+
 Great. I’ll begin compiling authoritative definitions, references, and practical insights for each of the requested topics in software architecture, including terminology, architectural styles, cross-cutting concerns, and design patterns.
 
 I’ll group everything by section, include standards and book references where available, and provide links to official or recognized sources. I’ll let you know once the overview is ready.
