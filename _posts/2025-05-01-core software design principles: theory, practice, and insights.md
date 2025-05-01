@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Core Software Design Principles: Theory, Practice, and Insights"

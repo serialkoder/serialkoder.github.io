@@ -1,8 +1,33 @@
-<!-- _includes/head-custom.html  -->
+<!-- _includes/head-custom.html -->
 <style>
-    /* Make every Markdown table span the full width of the post */
+    /* Existing rule that makes Markdown tables span full width */
     table {
       width: 100%;
+    }
+  
+    /* ===--- NEW citation styling starts here ---=== */
+  
+    /* Restart the citation counter on each page */
+    body { counter-reset: cite; }
+  
+    /* Hide original link text and turn it into a tiny superscript number */
+    a.cite {
+      font-size: 0;              /* hide visible text */
+      position: relative;
+      vertical-align: super;
+    }
+    a.cite::after {
+      counter-increment: cite;         /* bump the counter */
+      content: "[" counter(cite) "]";  /* what readers see */
+      font-size: 0.75em;
+      color: #555;
+      text-decoration: none;
+    }
+  
+    /* Optional hover/focus feedback */
+    a.cite:hover::after,
+    a.cite:focus::after {
+      text-decoration: underline;
     }
   </style>
   
