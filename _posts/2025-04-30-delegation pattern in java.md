@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Delegation Pattern in Java"
-tags: [design-patters]
+tags: [design-patterns]
 ---
 
 Great. I’ll prepare a comprehensive explanation of the Delegation Pattern in the context of Java. This will include:

@@ -3,6 +3,11 @@ description: "Deep-dive reading log & research notes"
 
 remote_theme: pages-themes/primer          # clean GitHub Pages theme
 
-markdown: kramdown              # ← switch renderer
+# ---------- Markdown renderer ----------
+markdown: kramdown          # stay on kramdown so inline <a id="…"> anchors survive
+kramdown:
+  input: GFM                # turn on GitHub-Flavoured Markdown tables, strikethrough, etc.
+
+# ---------- Plugins ----------
 plugins:
   - jekyll-remote-theme
