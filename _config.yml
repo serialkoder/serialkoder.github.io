@@ -3,6 +3,6 @@ description: "Deep-dive reading log & research notes"
 
 remote_theme: pages-themes/primer          # clean GitHub Pages theme
 
-markdown: CommonMarkGhPages                # ← switch renderer
+markdown: kramdown              # ← switch renderer
 plugins:
   - jekyll-remote-theme
