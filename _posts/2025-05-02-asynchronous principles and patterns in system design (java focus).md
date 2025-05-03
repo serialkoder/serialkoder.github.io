@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Asynchronous Principles and Patterns in System Design (Java Focus)"
-tags: [design-patterns]
+tags: [system-design]
 ---
 
 Great. I’ll prepare a detailed report on asynchronous principles and patterns in system design, tailored for an intermediate to advanced audience with a focus on Java. The report will include in-depth explanations, real-world examples, structured sections with headers, and conclude with references to reputable sources including experts and major tech companies.
