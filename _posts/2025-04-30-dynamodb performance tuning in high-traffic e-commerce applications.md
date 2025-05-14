@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DynamoDB Performance Tuning in High-Traffic E-commerce Applications"
-tags: [databases, system-design]
+tags: [databases, system-design,aws]
 ---
 
 Great. I will explore DynamoDB performance tuning with a focus on partition management, indexing strategies (GSIs and LSIs), and best practices for high-throughput workloads. The research will include real-world e-commerce case studies, showcasing common pitfalls, diagnosis methods, and structured solutions. I will ensure a narrative-driven approach to make the concepts engaging and applicable to your POC.
