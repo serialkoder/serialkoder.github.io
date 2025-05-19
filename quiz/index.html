@@ -1,7 +1,6 @@
 ---
-layout: quiz                 # uses the custom layout below
+layout: quiz            <!-- use whatever you named the layout -->
 title: "Creational Patterns Quiz"
-permalink: /quiz/            # page lives at /quiz/
 ---
 
 {% assign quiz = site.data.quizzes.creational_patterns %}
@@ -14,9 +13,9 @@ permalink: /quiz/            # page lives at /quiz/
 
       {% for opt in item.options %}
         <label>
-          <input  type="radio"
-                  name="q{{ forloop.parentloop.index }}"   <!-- one group per question -->
-                  value="{{ forloop.index0 }}">            <!-- option index -->
+          <input type="radio"
+                 name="q{{ forloop.parentloop.index }}"  <!-- unique per question -->
+                 value="{{ forloop.index0 }}">
           {{ opt }}
         </label><br>
       {% endfor %}
@@ -30,7 +29,7 @@ permalink: /quiz/            # page lives at /quiz/
 </form>
 
 <script>
-document.getElementById('check').onclick = function () {
+document.getElementById('check').onclick = () => {
   let correct = 0, total = 0;
   document.querySelectorAll('#quiz .question').forEach(q => {
     total++;
