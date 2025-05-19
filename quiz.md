@@ -1,5 +1,5 @@
 ---
-layout: default        # re-use your existing layout
+layout: quiz        # re-use your existing layout
 title: "Quiz"
 permalink: /quiz/      # shows up at /quiz/
 ---
