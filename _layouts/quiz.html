@@ -32,26 +32,24 @@ document.getElementById('check').onclick = () => {
   document.querySelectorAll('#quiz .question').forEach(q => {
     total++;
 
-    const rightIndex = q.dataset.correct;               // "2"
+    const rightIndex = q.dataset.correct;
     const chosen     = q.querySelector('input:checked');
 
-    // wipe old state
+    /* reset any previous attempt */
     q.classList.remove('is-correct', 'is-wrong');
-    q.querySelectorAll('label').forEach(l => l.classList.remove('right', 'wrong'));
+    q.querySelectorAll('label')
+      .forEach(l => l.classList.remove('right', 'wrong'));
 
-    if (chosen) {
-      const pickedIndex = chosen.value;                 // "3" etc.
-      if (pickedIndex === rightIndex) {
-        correct++;
-        q.classList.add('is-correct');
-      } else {
-        q.classList.add('is-wrong');
-      }
+    /* blank answer counts as wrong */
+    const pickedIndex = chosen ? chosen.value : null;
+    if (pickedIndex === rightIndex) {
+      correct++;
+      q.classList.add('is-correct');
     } else {
-      q.classList.add('is-wrong');                      // nothing chosen counts as wrong
+      q.classList.add('is-wrong');
     }
 
-    /* mark the right & wrong options for clarity */
+    /* decorate individual options */
     q.querySelectorAll('input').forEach(inp => {
       const lbl = inp.parentElement;
       if (inp.value === rightIndex) lbl.classList.add('right');
