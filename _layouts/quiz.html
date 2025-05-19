@@ -25,29 +25,44 @@ layout: default                  <!-- keeps header / footer -->
     <p id="result" style="font-weight:bold;"></p>
   </form>
 
-  <script>
-  document.getElementById('check').onclick = () => {
-    let correct = 0, total = 0;
-    document.querySelectorAll('#quiz .question').forEach(q => {
-      total++;
-      q.classList.remove('correct', 'incorrect');
-      const labels = q.querySelectorAll('label');
-      labels.forEach(lb => lb.classList.remove('correct', 'wrong'));
+<script>
+document.getElementById('check').onclick = () => {
+  let correct = 0, total = 0;
 
-      const correctIdx = q.dataset.correct;
-      if (labels[correctIdx]) labels[correctIdx].classList.add('correct');
+  document.querySelectorAll('#quiz .question').forEach(q => {
+    total++;
 
-      const chosen = q.querySelector('input:checked');
-      if (chosen && chosen.value === correctIdx) {
+    const rightIndex = q.dataset.correct;               // "2"
+    const chosen     = q.querySelector('input:checked');
+
+    // wipe old state
+    q.classList.remove('is-correct', 'is-wrong');
+    q.querySelectorAll('label').forEach(l => l.classList.remove('right', 'wrong'));
+
+    if (chosen) {
+      const pickedIndex = chosen.value;                 // "3" etc.
+      if (pickedIndex === rightIndex) {
         correct++;
-        q.classList.add('correct');
+        q.classList.add('is-correct');
       } else {
-        q.classList.add('incorrect');
-        if (chosen) labels[chosen.value].classList.add('wrong');
+        q.classList.add('is-wrong');
       }
+    } else {
+      q.classList.add('is-wrong');                      // nothing chosen counts as wrong
+    }
+
+    /* mark the right & wrong options for clarity */
+    q.querySelectorAll('input').forEach(inp => {
+      const lbl = inp.parentElement;
+      if (inp.value === rightIndex) lbl.classList.add('right');
+      else if (inp.checked)         lbl.classList.add('wrong');
     });
-    document.getElementById('result').textContent =
-      `You scored ${correct} / ${total}`;
-  };
-  </script>
+  });
+
+  document.getElementById('result').textContent =
+    `You scored ${correct} / ${total}`;
+};
+</script>
+
+
 </article>
