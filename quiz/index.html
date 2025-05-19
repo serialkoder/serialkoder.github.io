@@ -14,7 +14,7 @@ title: "Creational Patterns Quiz"
       {% for opt in item.options %}
         <label>
           <input type="radio"
-                 name="q{{ forloop.parentloop.index }}"  <!-- unique per question -->
+                 name="q{{ forloop.parentloop.index }}" 
                  value="{{ forloop.index0 }}">
           {{ opt }}
         </label><br>
