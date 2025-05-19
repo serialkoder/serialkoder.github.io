@@ -7,3 +7,8 @@ remote_theme: pages-themes/primer
 markdown: CommonMarkGhPages      # ← back to the renderer you started with
 plugins:
   - jekyll-remote-theme
+
+collections:
+  quizzes:
+    output: true                 # generates a page for every file
+    permalink: /quiz/:name/      # URL == /quiz/<filename>/
