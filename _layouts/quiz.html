@@ -2,6 +2,21 @@
 layout: default                  <!-- keeps header / footer -->
 ---
 <article class="markdown-body">
+  <style id="quiz-feedback">
+/* --- quiz correctness feedback --- */
+fieldset.question.is-correct {
+  border-color: #2da44e !important;   /* green border */
+  background:   #d2fedb !important;   /* light-green fill */
+}
+fieldset.question.is-wrong {
+  border-color: #cf222e !important;   /* red border */
+  background:   #ffe0e0 !important;   /* light-red fill */
+}
+label.right  { font-weight: 600 !important; }          /* highlight correct */
+label.wrong  { text-decoration: line-through !important;
+               opacity: .66 !important; }              /* strike wrong pick */
+</style>
+
   {% assign quiz = page.questions %}
   <h2>{{ page.title }}</h2>
 
