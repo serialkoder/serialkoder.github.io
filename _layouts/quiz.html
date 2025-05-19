@@ -30,8 +30,21 @@ layout: default                  <!-- keeps header / footer -->
     let correct = 0, total = 0;
     document.querySelectorAll('#quiz .question').forEach(q => {
       total++;
+      q.classList.remove('correct', 'incorrect');
+      const labels = q.querySelectorAll('label');
+      labels.forEach(lb => lb.classList.remove('correct', 'wrong'));
+
+      const correctIdx = q.dataset.correct;
+      if (labels[correctIdx]) labels[correctIdx].classList.add('correct');
+
       const chosen = q.querySelector('input:checked');
-      if (chosen && chosen.value === q.dataset.correct) correct++;
+      if (chosen && chosen.value === correctIdx) {
+        correct++;
+        q.classList.add('correct');
+      } else {
+        q.classList.add('incorrect');
+        if (chosen) labels[chosen.value].classList.add('wrong');
+      }
     });
     document.getElementById('result').textContent =
       `You scored ${correct} / ${total}`;
