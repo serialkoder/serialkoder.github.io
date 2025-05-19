@@ -1,7 +1,7 @@
 ---
-layout: quiz        # re-use your existing layout
-title: "Quiz"
-permalink: /quiz/      # shows up at /quiz/
+layout: quiz                 # uses the custom layout below
+title: "Creational Patterns Quiz"
+permalink: /quiz/            # page lives at /quiz/
 ---
 
 {% assign quiz = site.data.quizzes.creational_patterns %}
@@ -11,17 +11,20 @@ permalink: /quiz/      # shows up at /quiz/
   {% for item in quiz.questions %}
     <fieldset class="question" data-correct="{{ item.answer }}">
       <legend><strong>Q{{ forloop.index }}.</strong> {{ item.q }}</legend>
+
       {% for opt in item.options %}
         <label>
-          <input type="radio"
-                 name="q{{ forloop.parent.index }}"
-                 value="{{ forloop.index0 }}">
+          <input  type="radio"
+                  name="q{{ forloop.parentloop.index }}"   <!-- one group per question -->
+                  value="{{ forloop.index0 }}">            <!-- option index -->
           {{ opt }}
         </label><br>
       {% endfor %}
+
     </fieldset>
     <hr/>
   {% endfor %}
+
   <button type="button" id="check">Check answers</button>
   <p id="result" style="font-weight:bold;"></p>
 </form>
