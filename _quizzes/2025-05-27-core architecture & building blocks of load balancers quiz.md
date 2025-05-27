@@ -1,6 +1,6 @@
 ---
 layout: quiz
-title: "Core Architecture & Building Blocks of Load Balancers Quiz"
+title: "Core Architecture & Building Blocks of Load Balancers - Quiz"
 questions:
 
   - q: "1. Which of the following statements about active vs. passive health checks is correct?"
