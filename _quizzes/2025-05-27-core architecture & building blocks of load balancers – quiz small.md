@@ -1,6 +1,6 @@
 ---
 layout: quiz
-title: "Core Architecture & Building Blocks of Load Balancers Quiz"
+title: "Core Architecture & Building Blocks of Load Balancers Quiz small"
 questions:
   - q: "If a backend server fails its health checks consecutively (exceeding the failure threshold), how does a typical load balancer react?"
     options:
