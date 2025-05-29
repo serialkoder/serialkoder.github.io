@@ -25,17 +25,17 @@ Another clever strategy is the **Power of Two Choices (P2C)**. Instead of queryi
 
 For certain use cases, **hash-based algorithms** ensure the *same client or session is routed consistently* to the same backend. A common approach is **consistent hashing** (e.g. ring hash or **Ketama** hashing): each server is assigned positions on a hash ring, and each request (or session key) is hashed to a point on that ring, served by the next server clockwise. The appeal is stability: when servers are added/removed, the hashing only remaps a small fraction of clients to new targets – e.g. “adding or removing one host from N affects only \~1/N of requests”. Google’s **Maglev** algorithm refines this with a precomputed lookup table for consistent hashing, achieving both *even distribution* and minimal disruption on changes. Hash-based schemes are great for *session affinity* (like ensuring a user’s session or a cache key stays on one server) and for multi-LB redundancy, but a pure hash can lead to imbalance if traffic isn’t uniform. (Maglev addresses this by carefully populating its hash table to evenly spread load.) Generally, consistent hashing trades a bit of load balance optimality for *session stickiness and fault tolerance*.
 
+
 Below is a comparison of popular load balancing algorithms and their pros/cons:
 
-| **Algorithm**            | **Pros**                                                                         | **Cons**                                                                                                |
-| ------------------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Round Robin**          | Very simple; evenly cycles through servers.                                      | Ignores server load or capacity differences.                                                            |
-| **Weighted Round Robin** | Accounts for static capacity differences via weights.                            | Still static (weights fixed); can’t adapt to runtime load.                                              |
-| **Least Connections**    | Dynamic load-responsive distribution; avoids sending traffic to busy servers.    | Requires tracking server load (polling/metrics); assumes connection count correlates to work.           |
-| **Least Response Time**  | Sends traffic to the fastest-responding server; adapts to actual performance.    | Needs continuous latency measurements; can be skewed by outliers or caching effects.                    |
-| **Power of Two Choices** | Near-optimal load spread with minimal overhead (checks only 2 servers).          | Random selection can occasionally choose two slow servers; not as precise as full load scan.            |
-| **Consistent Hashing**   | Keeps a client/session on the same server; minimal disruption if servers change. | Possibly uneven load if some hashes get more traffic; primarily useful when affinity > perfect balance. |
-
+| **Algorithm** | **Pros** | **Cons** |
+| --- | --- | --- |
+| **Round Robin** | Very simple; evenly cycles through servers. | Ignores server load or capacity differences. |
+| **Weighted Round Robin** | Accounts for static capacity differences via weights. | Still static (weights fixed); can’t adapt to runtime load. |
+| **Least Connections** | Dynamic load-responsive distribution; avoids sending traffic to busy servers. | Requires tracking server load (polling/metrics); assumes connection count correlates to work. |
+| **Least Response Time** | Sends traffic to the fastest-responding server; adapts to actual performance. | Needs continuous latency measurements; can be skewed by outliers or caching effects. |
+| **Power of Two Choices** | Near-optimal load spread with minimal overhead (checks only 2 servers). | Random selection can occasionally choose two slow servers; not as precise as full load scan. |
+| **Consistent Hashing** | Keeps a client/session on the same server; minimal disruption if servers change. | Possibly uneven load if some hashes get more traffic; primarily useful when affinity > perfect balance. |
 ## Forwarding Modes: NAT vs DSR vs Tunneling
 
 How a load balancer forwards traffic to backends impacts network behavior and performance. Common modes include **NAT**, **Direct Server Return (DSR)**, and **IP tunneling**:
