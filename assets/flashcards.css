@@ -1,0 +1,4 @@
+.card { margin: 1rem 0; }
+.card summary { cursor: pointer; font-weight: 600; }
+.card[open] summary { color: #1a7f37; }  /* green when expanded */
+.answer { margin-top: .5rem; }

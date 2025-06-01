@@ -1,14 +1,16 @@
-# _config.yml
 title: "SerialReads"
 description: "Deep-dive reading log & research notes"
 
 remote_theme: pages-themes/primer
 
-markdown: CommonMarkGhPages      # ← back to the renderer you started with
+markdown: CommonMarkGhPages
 plugins:
   - jekyll-remote-theme
 
 collections:
   quizzes:
-    output: true                 # generates a page for every file
-    permalink: /quiz/:name/      # URL == /quiz/<filename>/
+    output: true
+    permalink: /quiz/:name/        # → /quiz/<filename>/
+  flashcards:
+    output: true
+    permalink: /flashcards/:title/ # → /flashcards/<deck-title>/
