@@ -1,0 +1,10 @@
+---
+layout: default
+title: "Flashcard Decks"
+---
+
+<ul>
+{% for q in site.flashcards %}
+  <li><a href="{{ q.url | relative_url }}">{{ q.title }}</a></li>
+{% endfor %}
+</ul>
