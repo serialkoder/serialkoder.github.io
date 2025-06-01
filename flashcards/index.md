@@ -9,7 +9,9 @@ permalink: /flashcards/
 Pick a deck:
 
 <ul>
-{% for deck in site.flashcards %}
+{% assign decks = site.flashcards.docs | sort: "title" %}
+{% for deck in decks %}
   <li><a href="{{ deck.url | relative_url }}">{{ deck.title }}</a></li>
 {% endfor %}
 </ul>
+
