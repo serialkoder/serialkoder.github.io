@@ -50,7 +50,10 @@
       const p1 = centre(selectedLeft);
       const p2 = centre(el);
       const line = document.createElementNS('http://www.w3.org/2000/svg','line');
-      Object.assign(line, { x1:p1.x, y1:p1.y, x2:p2.x, y2:p2.y });
+      line.setAttribute('x1', p1.x);
+      line.setAttribute('y1', p1.y);
+      line.setAttribute('x2', p2.x);
+      line.setAttribute('y2', p2.y);
       line.setAttribute('stroke', '#0077cc');
       line.setAttribute('stroke-width', '2');
       line.setAttribute('marker-end','url(#arrow-head)');
