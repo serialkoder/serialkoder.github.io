@@ -1,7 +1,37 @@
-.card { margin: 1rem 0; }
-.card summary { cursor: pointer; font-weight: 600; }
-.card[open] summary { color: #1a7f37; }  /* green when expanded */
-.answer { margin-top: .5rem; }
-/* flashcards.css – add at bottom */
-.card.done summary { color:#888; text-decoration:line-through; }
-#reset-deck { margin:1rem 0; }
+/* ─────────────  Layout you already had  ───────────── */
+.card          { margin: 1rem 0; }
+.answer        { margin-top: .5rem; }
+#reset-deck    { margin: 1rem 0; }
+
+/* ─────────────  NEW colour-coding logic  ──────────── */
+
+/* base (unread) */
+.card summary {
+  cursor: pointer;
+  font-weight: 600;
+  margin: .25rem 0;
+  padding: .4rem .6rem .4rem .9rem;      /* left pad for border */
+  border-left: 4px solid #c0c0c0;        /* neutral grey */
+  background: #f9f9f9;
+  transition: background .2s, border-color .2s;
+}
+
+/* hover for unread */
+.card summary:not(.done):hover {
+  background: #eeeeee;
+}
+
+/* in-progress (currently open) */
+.card[open] summary {
+  background: #fff9e6;                   /* pale yellow */
+  border-left-color: #ffab00;            /* amber */
+  color: #000;
+}
+
+/* done / reviewed */
+.card.done summary {
+  background: #e6ffed;                   /* pale green */
+  border-left-color: #1a7f37;            /* green */
+  color: #1a7f37;
+  text-decoration: none;                 /* remove strike-through */
+}
