@@ -14,3 +14,6 @@ collections:
   flashcards:
     output: true
     permalink: /flashcards/:title/ # → /flashcards/<deck-title>/
+  matchcards:                # ← new
+    output: true
+    permalink: /match/:title/

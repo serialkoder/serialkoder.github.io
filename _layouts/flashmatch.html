@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="markdown-body">
+  <h1>{{ page.title }}</h1>
+  {{ page.intro | markdownify }}
+
+  <div id="match-deck" class="match-grid">
+    {% assign lhs = page.pairs | map: "left"  | shuffle %}
+    {% assign rhs = page.pairs | map: "right" | shuffle %}
+    <div class="lhs">
+      {% for item in lhs %}
+        <div class="card left" data-left="{{ item }}">{{ item }}</div>
+      {% endfor %}
+    </div>
+    <div class="rhs">
+      {% for item in rhs %}
+        <div class="card right" data-right="{{ item }}">{{ item }}</div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <button id="check-match" disabled>Check answers</button>
+  <button id="reset-match">Reset</button>
+
+  <p><a href="{{ '/match/' | relative_url }}">← Back to all matching decks</a></p>
+</article>

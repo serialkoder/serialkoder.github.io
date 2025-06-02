@@ -1,0 +1,19 @@
+.match-grid { display: flex; gap: 2rem; flex-wrap: wrap; }
+.lhs, .rhs  { flex: 1 1 200px; }
+
+.card {
+  padding: .4rem .6rem;
+  margin: .3rem 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  background: #f9f9f9;
+  transition: background .2s, border-color .2s;
+}
+
+.card.active  { border-color:#0077cc; background:#e8f3ff; }
+.card.paired  { opacity:.7; cursor: default; }
+
+.correct { border-color:#1a7f37; background:#e6ffed; }
+.wrong   { border-color:#d73a49; background:#ffeef0; }
