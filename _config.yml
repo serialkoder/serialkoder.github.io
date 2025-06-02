@@ -17,3 +17,16 @@ collections:
   matchcards:                # ← new
     output: true
     permalink: /match/:title/
+
+# ▼ NEW – site-wide links
+navigation:
+  - title: Home
+    url: /
+  - title: Tags
+    url: /tags/
+  - title: Quizzes
+    url: /quiz/
+  - title: Flashcards
+    url: /flashcards/
+  - title: Matching
+    url: /match/    
