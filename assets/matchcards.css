@@ -17,3 +17,6 @@
 
 .correct { border-color:#1a7f37; background:#e6ffed; }
 .wrong   { border-color:#d73a49; background:#ffeef0; }
+/* make lines sit under cards but above content */
+#match-svg { z-index: 0; }
+.card      { position: relative; z-index: 1; }

@@ -1,53 +1,98 @@
-/* assets/matchcards.js */
+// assets/matchcards.js  (line-drawing version)
 (function () {
-  const deck = document.getElementById('match-deck');
-  if (!deck) return;
+  const deck   = document.getElementById('match-deck');
+  const svg    = document.getElementById('match-svg');
+  if (!deck || !svg) return;
 
   let selectedLeft = null;
-  const matches    = {};                          // { leftText: rightText }
+  const matches    = {};         // { leftText : rightText }
+  const lines      = {};         // { leftText : <svg line element> }
   const checkBtn   = document.getElementById('check-match');
   const resetBtn   = document.getElementById('reset-match');
 
-  /* click to build pairs */
+  /* helper: centre-point of a card relative to svg */
+  function centre(el) {
+    const r = el.getBoundingClientRect();
+    const svgR = svg.getBoundingClientRect();
+    return { x: r.left + r.width  / 2 - svgR.left,
+             y: r.top  + r.height / 2 - svgR.top  };
+  }
+
+  /* click handler */
   deck.addEventListener('click', e => {
     const el = e.target;
     if (!el.classList.contains('card')) return;
 
-    if (el.classList.contains('left')) {          // pick a source term
+    /* select left term */
+    if (el.classList.contains('left')) {
       if (selectedLeft) selectedLeft.classList.remove('active');
       selectedLeft = el;
       el.classList.add('active');
     }
 
-    if (el.classList.contains('right') && selectedLeft) { // confirm pair
-      matches[selectedLeft.dataset.left] = el.dataset.right;
+    /* click right term to pair */
+    if (el.classList.contains('right') && selectedLeft) {
+      const leftText  = selectedLeft.dataset.left;
+      const rightText = el.dataset.right;
+
+      /* if repicking, remove old line */
+      if (lines[leftText]) {
+        svg.removeChild(lines[leftText]);
+        delete lines[leftText];
+      }
+
+      /* record & draw */
+      matches[leftText] = rightText;
       selectedLeft.classList.add('paired');
       el.classList.add('paired');
       selectedLeft.classList.remove('active');
+
+      const p1 = centre(selectedLeft);
+      const p2 = centre(el);
+      const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+      Object.assign(line, { x1:p1.x, y1:p1.y, x2:p2.x, y2:p2.y });
+      line.setAttribute('stroke', '#0077cc');
+      line.setAttribute('stroke-width', '2');
+      line.setAttribute('marker-end','url(#arrow-head)');
+      svg.appendChild(line);
+      lines[leftText] = line;
+
       selectedLeft = null;
       checkBtn.disabled = false;
     }
   });
 
-  /* evaluate */
+  /* add arrowhead marker once */
+  const marker = document.createElementNS('http://www.w3.org/2000/svg','marker');
+  marker.setAttribute('id','arrow-head');
+  marker.setAttribute('viewBox','0 0 10 10');
+  marker.setAttribute('refX','10');
+  marker.setAttribute('refY','5');
+  marker.setAttribute('markerWidth','6');
+  marker.setAttribute('markerHeight','6');
+  marker.setAttribute('orient','auto-start-reverse');
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M 0 0 L 10 5 L 0 10 z');
+  path.setAttribute('fill','#0077cc');
+  marker.appendChild(path);
+  svg.appendChild(marker);
+
+  /* check answers */
   checkBtn.addEventListener('click', () => {
-    document.querySelectorAll('.card.left').forEach(leftEl => {
-      const expected = leftEl.dataset.left;
+    const leftCards  = deck.querySelectorAll('.card.left');
+    leftCards.forEach(l => {
+      const expected = l.dataset.left;
       const matched  = matches[expected];
-      if (!matched) return;
+      const rightEl  = deck.querySelector(`.card.right[data-right="${matched}"]`);
 
-      const rightEl = document.querySelector(`.card.right[data-right="${matched}"]`);
-      const correct = deck.querySelector(
-        `.card.right[data-right="${expected === matched ? matched : ''}"]`
-      );
+      if (!matched) return; // unmatched
 
-      if (rightEl && rightEl.dataset.right === matched && expected) {
-        leftEl.classList.add('correct');
-        rightEl.classList.add('correct');
-      } else {
-        leftEl.classList.add('wrong');
-        rightEl?.classList.add('wrong');
-      }
+      const correct   = deck.querySelector(`.card.right[data-right="${expected}"]`);
+      const isCorrect = rightEl === correct;
+
+      l.classList.add(isCorrect ? 'correct' : 'wrong');
+      rightEl.classList.add(isCorrect ? 'correct' : 'wrong');
+      lines[expected].setAttribute('stroke', isCorrect ? '#1a7f37' : '#d73a49');
     });
     checkBtn.disabled = true;
   });

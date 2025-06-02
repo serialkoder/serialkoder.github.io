@@ -6,18 +6,25 @@ layout: default
   <h1>{{ page.title }}</h1>
   {{ page.intro | markdownify }}
 
-  <div id="match-deck" class="match-grid">
-    {% assign lhs = page.pairs | map: "left"  | shuffle %}
-    {% assign rhs = page.pairs | map: "right" | shuffle %}
-    <div class="lhs">
-      {% for item in lhs %}
-        <div class="card left" data-left="{{ item }}">{{ item }}</div>
-      {% endfor %}
-    </div>
-    <div class="rhs">
-      {% for item in rhs %}
-        <div class="card right" data-right="{{ item }}">{{ item }}</div>
-      {% endfor %}
+  <div id="match-wrapper" style="position:relative;">
+    <!-- SVG layer for lines -->
+    <svg id="match-svg" width="100%" height="100%"
+         style="position:absolute; top:0; left:0; pointer-events:none;"></svg>
+
+    <!-- Grid with two shuffled columns -->
+    <div id="match-deck" class="match-grid">
+      {% assign lhs = page.pairs | map: "left"  | shuffle %}
+      {% assign rhs = page.pairs | map: "right" | shuffle %}
+      <div class="lhs">
+        {% for item in lhs %}
+          <div class="card left"  data-left="{{ item }}">{{ item }}</div>
+        {% endfor %}
+      </div>
+      <div class="rhs">
+        {% for item in rhs %}
+          <div class="card right" data-right="{{ item }}">{{ item }}</div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 
