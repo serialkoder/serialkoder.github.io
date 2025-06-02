@@ -1,13 +1,10 @@
 ---
 layout: default
 title: Matching Decks
-permalink: /match/
 ---
 
-# Matching Decks
-
 <ul>
-{% for deck in site.matchcards %}
-  <li><a href="{{ deck.url | relative_url }}">{{ deck.title }}</a></li>
+{% for q in site.matchcards %}
+  <li><a href="{{ q.url | relative_url }}">{{ q.title }}</a></li>
 {% endfor %}
 </ul>
