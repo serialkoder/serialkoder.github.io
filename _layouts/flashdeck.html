@@ -1,3 +1,4 @@
+{% raw %}
 ---
 layout: default
 ---
@@ -7,8 +8,10 @@ layout: default
 
   {{ page.intro | markdownify }}
 
+  <button id="reset-deck">Reset progress</button>
+
   {% for c in page.cards %}
-  <details class="card">
+  <details class="card" data-idx="{{ forloop.index }}">
     <summary>{{ forloop.index }}. {{ c.q }}</summary>
     <div class="answer">{{ c.a | markdownify }}</div>
   </details>
@@ -16,3 +19,4 @@ layout: default
 
   <p><a href="{{ '/flashcards/' | relative_url }}">← Back to all decks</a></p>
 </article>
+{% endraw %}
