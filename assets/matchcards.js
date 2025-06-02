@@ -3,6 +3,18 @@
   const deck   = document.getElementById('match-deck');
   const svg    = document.getElementById('match-svg');
   if (!deck || !svg) return;
+  
+  /* ---------- client-side shuffle of column cards ---------- */
+  function shuffleColumn(selector) {
+    const col = deck.querySelector(selector);
+    if (!col) return;
+    const cards = Array.from(col.children);
+    cards.sort(() => Math.random() - 0.5);   // Fisher-Yates shortcut
+    cards.forEach(c => col.appendChild(c));  // re-append = new order
+  }
+  shuffleColumn('.lhs');
+  shuffleColumn('.rhs');
+  /* ---------------------------------------------------------- */
 
   let selectedLeft = null;
   const matches    = {};         // { leftText : rightText }
