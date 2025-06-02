@@ -3,6 +3,10 @@ layout: default
 ---
 
 <article class="markdown-body">
+  <script id="pairs-json" type="application/json">
+    {{ page.pairs | jsonify }}
+  </script>
+
   <h1>{{ page.title }}</h1>
   {{ page.intro | markdownify }}
 

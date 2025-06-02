@@ -82,6 +82,14 @@
 
   /* check answers */
   checkBtn.addEventListener('click', () => {
+/* build answer key { leftTerm: correctRightText } */
+    const answerKey = JSON.parse(
+      document.getElementById('pairs-json').textContent
+    ).reduce((acc, pair) => {
+      acc[pair.left] = pair.right;
+      return acc;
+    }, {});
+
     const leftCards  = deck.querySelectorAll('.card.left');
     leftCards.forEach(l => {
       const expected = l.dataset.left;
@@ -90,8 +98,7 @@
 
       if (!matched) return; // unmatched
 
-      const correct   = deck.querySelector(`.card.right[data-right="${expected}"]`);
-      const isCorrect = rightEl === correct;
+      const isCorrect = matched === answerKey[expected];
 
       l.classList.add(isCorrect ? 'correct' : 'wrong');
       rightEl.classList.add(isCorrect ? 'correct' : 'wrong');
