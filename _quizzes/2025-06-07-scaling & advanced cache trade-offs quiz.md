@@ -121,3 +121,4 @@ questions:
       - "Other shards have effectively infinite capacity, so only this shard performs evictions"
       - "That shard is handling a disproportionately large share of requests or data (a shard imbalance/hotspot), leading to more evictions and higher tail latency"
     answer: 3
+---
