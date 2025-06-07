@@ -41,6 +41,37 @@ label.wrong  { text-decoration: line-through !important;
   </form>
 
 <script>
+/* Fisher-Yates shuffle on label+<br> pairs ------------------------------ */
+function shuffleQuestion(fieldset) {
+  // Build an array of node arrays:  [<label>, <br>]  for every option
+  const pairs = [];
+  let n = fieldset.firstChild;
+  while (n) {
+    if (n.nodeName === 'LABEL') {
+      // capture the label and (if present) the very next <br>
+      const next = n.nextSibling;
+      pairs.push(next && next.nodeName === 'BR' ? [n, next] : [n]);
+    }
+    n = n.nextSibling;
+  }
+
+  // Fisher–Yates shuffle in-place
+  for (let i = pairs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pairs[i], pairs[j]] = [pairs[j], pairs[i]];
+  }
+
+  // Re-append nodes in new order
+  pairs.flat().forEach(node => fieldset.appendChild(node));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#quiz .question')
+          .forEach(shuffleQuestion);
+});
+
+/* ---------------------------------------------------------------------- */
+
 document.getElementById('check').onclick = () => {
   let correct = 0, total = 0;
 
