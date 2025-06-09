@@ -1,30 +1,22 @@
 ---
 layout: flashmatch
-title: "Expanded Match the Scenario to the Framework"
+title: "Match the Scenario to its Thinking Framework"
 intro: |
-  Drag or click the scenario on the left to its optimal thinking framework on the right,
+  Drag or click each scenario on the left to its optimal thinking framework on the right,
   then press **Check answers**.
 pairs:
-  - left: "Uncovering hidden assumptions in a heated roadmap debate"
+  - left: "Expose hidden assumptions in a roadmap debate"
     right: "Socratic Questioning"
-  - left: "Choosing between three scaling strategies under strict SLA"
+  - left: "Pick the best scaling strategy under a strict SLA"
     right: "Decision Tree / Causal Diagram"
-  - left: "Stripping cost drivers to absolute physical limits"
+  - left: "Strip cost drivers to physical limits"
     right: "First-Principles Decomposition"
-  - left: "Teaching the CAP theorem to an intern"
+  - left: "Teach the CAP theorem to an intern"
     right: "Feynman Technique"
-  - left: "Borrowing insights from ant-colony routing for microservice traffic"
+  - left: "Apply ant‑colony routing ideas to microservices"
     right: "Analogical Mapping"
-  - left: "Drawing out interactions in a complex architectural review"
+  - left: "Diagram interactions in a complex architecture review"
     right: "Image Thinking & Diagrams"
-  - left: "Analyzing repeated service outages for underlying interdependencies"
+  - left: "Trace interdependencies behind repeated outages"
     right: "Systems Thinking"
-  - left: "Clarifying subtle differences between two competing technology solutions"
-    right: "Decision Tree / Causal Diagram"
-  - left: "Explaining a novel machine learning algorithm to non-technical stakeholders"
-    right: "Feynman Technique"
-  - left: "Visualizing step-by-step processes to enhance retention during training"
-    right: "Image Thinking & Diagrams"
-  - left: "Addressing performance bottlenecks by dissecting fundamental system components"
-    right: "First-Principles Decomposition"
 ---
