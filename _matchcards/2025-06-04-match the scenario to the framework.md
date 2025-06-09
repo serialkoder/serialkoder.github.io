@@ -1,6 +1,6 @@
 ---
 layout: flashmatch
-title: "Match the Scenario to the Framework"
+title: "Expanded Match the Scenario to the Framework"
 intro: |
   Drag or click the scenario on the left to its optimal thinking framework on the right,
   then press **Check answers**.
@@ -15,4 +15,16 @@ pairs:
     right: "Feynman Technique"
   - left: "Borrowing insights from ant-colony routing for microservice traffic"
     right: "Analogical Mapping"
+  - left: "Drawing out interactions in a complex architectural review"
+    right: "Image Thinking & Diagrams"
+  - left: "Analyzing repeated service outages for underlying interdependencies"
+    right: "Systems Thinking"
+  - left: "Clarifying subtle differences between two competing technology solutions"
+    right: "Decision Tree / Causal Diagram"
+  - left: "Explaining a novel machine learning algorithm to non-technical stakeholders"
+    right: "Feynman Technique"
+  - left: "Visualizing step-by-step processes to enhance retention during training"
+    right: "Image Thinking & Diagrams"
+  - left: "Addressing performance bottlenecks by dissecting fundamental system components"
+    right: "First-Principles Decomposition"
 ---
