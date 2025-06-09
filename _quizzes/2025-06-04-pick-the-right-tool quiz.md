@@ -63,4 +63,53 @@ questions:
       - "First-Principles Decomposition"
       - "Socratic Questioning"
     answer: 0
+
+      - q: "You realize you're losing track of complex details during a discussion. You start sketching a diagram to capture interactions clearly. Which method describes this?"
+    options:
+      - "Analogical Mapping"
+      - "Decision Tree"
+      - "Image Thinking & Diagrams"
+      - "Feynman Technique"
+    answer: 2
+
+  - q: "A performance issue spans multiple teams and systems. You consider inputs, outputs, and feedback loops across components. What approach are you applying?"
+    options:
+      - "Analogical Mapping"
+      - "Decision Tree"
+      - "Systems Thinking"
+      - "Socratic Questioning"
+    answer: 2
+
+  - q: "You create vivid mental images to ensure you deeply understand and retain key points during a complex lecture. Which thinking tool does this exemplify?"
+    options:
+      - "Feynman Technique"
+      - "Image Thinking & Diagrams"
+      - "Decision Tree"
+      - "First-Principles Decomposition"
+    answer: 1
+
+  - q: "You're trying to identify a bottleneck in a data pipeline. You systematically break down each stage and substage of the process. Which tool is most directly used here?"
+    options:
+      - "Decision Tree"
+      - "Feynman Technique"
+      - "Image Thinking & Diagrams"
+      - "First-Principles Decomposition"
+    answer: 3
+
+  - q: "Your team keeps circling around vague disagreements. You pause to visually map out everyone's arguments clearly on a whiteboard. What technique are you primarily employing?"
+    options:
+      - "Image Thinking & Diagrams"
+      - "Analogical Mapping"
+      - "Socratic Questioning"
+      - "Feynman Technique"
+    answer: 0
+
+  - q: "When analyzing recurring outages, you look not just at immediate causes but at long-term feedback loops and interdependencies. Which method aligns with this perspective?"
+    options:
+      - "Analogical Mapping"
+      - "Systems Thinking"
+      - "Decision Tree"
+      - "Feynman Technique"
+    answer: 1
+
 ---

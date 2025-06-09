@@ -121,4 +121,4 @@ questions:
       - "Forces the CDN to revalidate the cached content with the origin server on every request"
       - "Instructs caches to store separate versions of the response based on specified request headers (e.g., Cookie, User-Agent)"
     answer: 3
----
+--- 
