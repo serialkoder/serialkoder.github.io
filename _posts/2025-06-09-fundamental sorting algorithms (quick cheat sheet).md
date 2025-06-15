@@ -53,23 +53,31 @@ Treat the array as a max-heap:
 Uses only `O(1)` extra space.
 
 ```python
-def heap_sort(a):
-    def sift_down(root, end):
-        while (child := 2*root + 1) <= end:
-            if child + 1 <= end and a[child] < a[child + 1]:
-                child += 1
-            if a[root] >= a[child]:
-                return
-            a[root], a[child] = a[child], a[root]
-            root = child
+def heap_sort(arr):
+    def sift_down(parent, end):
+        # Re-heapify the subtree rooted at *parent* up to index *end*
+        while (left := 2 * parent + 1) <= end:          # left child exists
+            right = left + 1                            # right child index
+            largest = left                              # assume left is larger
+            if right <= end and arr[right] > arr[left]:
+                largest = right                         # pick right if larger
+            if arr[parent] >= arr[largest]:
+                return                                  # heap property satisfied
+            arr[parent], arr[largest] = arr[largest], arr[parent]
+            parent = largest                            # continue sifting
 
-    n = len(a)
-    for start in range((n - 2) // 2, -1, -1):   # heapify
-        sift_down(start, n - 1)
-    for end in range(n - 1, 0, -1):             # sort
-        a[0], a[end] = a[end], a[0]
-        sift_down(0, end - 1)
-    return a
+    n = len(arr)
+
+    # 1️⃣ Build the max-heap (heapify)
+    for parent in range((n - 2) // 2, -1, -1):
+        sift_down(parent, n - 1)
+
+    # 2️⃣ Extract elements one by one
+    for end in range(n - 1, 0, -1):
+        arr[0], arr[end] = arr[end], arr[0]             # move current max to its spot
+        sift_down(0, end - 1)                           # restore heap property
+
+    return arr
 ```
 
 
