@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Foundations & Layering of Load Balancing Quiz"
+tags: [system-design]
 questions:
   - q: "Users in different continents are experiencing high latency when accessing a service hosted in a single data center. How can load balancing help reduce response times for these users?"
     options:

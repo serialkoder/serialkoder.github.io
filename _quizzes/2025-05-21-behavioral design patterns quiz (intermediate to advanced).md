@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Behavioral Design Patterns Quiz (Intermediate to Advanced)"
+tags: [design-patterns]
 questions:
   - q: "In a GUI application, when a user clicks a button, multiple parts of the program (such as other UI components and logging systems) need to react to this event without the button explicitly knowing about those components. Which design pattern enables this kind of one-to-many notification?"
     options:

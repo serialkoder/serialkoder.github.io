@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Union-Find (Disjoint-Set Union) Quiz"
+tags: [data-structures-and-algorithms]
 questions:
   - q: "What does **path compression** do during a `find(x)` call?"
     options:

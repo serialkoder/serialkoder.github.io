@@ -1,0 +1,32 @@
+---
+layout: default          # keeps header / footer
+title: Quiz Tags
+permalink: /quiz-tags/    # nice URL (no .html at the end)
+---
+
+<!-- Tag directory for the “quizzes” collection -->
+<h2>All quiz tags</h2>
+<ul>
+  {% assign all_tags = site.quizzes
+  | map: "tags"
+  | join: "," | split: "," | uniq | sort %}
+  {% for tag in all_tags %}
+  <li>
+    <a href="#{{ tag | slugify }}">{{ tag }}</a>
+    ({{ site.quizzes | where_exp:"q","q.tags contains tag" | size }})
+  </li>
+  {% endfor %}
+</ul>
+<hr/>
+
+{% for tag in all_tags %}
+<h3 id="{{ tag | slugify }}">{{ tag }}</h3>
+{% assign tagged = site.quizzes
+| where_exp:"q","q.tags contains tag"
+| sort:"title" %}
+<ul>
+  {% for quiz in tagged %}
+  <li><a href="{{ quiz.url | relative_url }}">{{ quiz.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}

@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Message-Queue Delivery Semantics & Failure Handling Quiz"
+tags: [software-architecture]
 questions:
   - q: "EASY: What does the 'at-least-once' delivery guarantee imply for message delivery?"
     options:

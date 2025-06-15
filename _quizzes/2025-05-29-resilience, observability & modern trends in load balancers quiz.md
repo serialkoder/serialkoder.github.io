@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Resilience, Observability & Modern Trends in Load Balancers Quiz"
+tags: [system-design]
 questions:
   - q: "A web service is deployed on two load-balancer nodes for high availability. In one configuration, both nodes share traffic simultaneously; in another, one node handles traffic while the second stays on standby until needed. Which statement about these two configurations is correct?"
     options:
@@ -145,3 +146,4 @@ questions:
       - "The secondary hijacks the primary’s MAC address to directly intercept packets intended for the primary."
       - "Each load balancer uses a unique IP, and clients are instructed to connect to the second IP if the first one fails."
     answer: 1
+---

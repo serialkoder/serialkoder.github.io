@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Advanced Patterns, Ecosystem & Observability Quiz"
+tags: [software-architecture]
 questions:
   - q: 'EASY: Which messaging pattern ensures each message is consumed by only one recipient (and not broadcast to all subscribers)?'
     options:

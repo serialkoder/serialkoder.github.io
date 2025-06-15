@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Service-Oriented Architecture (SOA) Quiz"
+tags: [software-architecture]
 questions:
   - q: "An e-commerce company changed the internal database structure of its product-catalog service for optimization, but the service’s interface (contract) to consumers remained unchanged and no clients were affected. Which SOA design principle is demonstrated by this scenario?"
     options:

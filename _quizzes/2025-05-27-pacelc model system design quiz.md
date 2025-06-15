@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "PACELC Model System Design Quiz"
+tags: [system-design]
 questions:
   - q: "In distributed system design, what does the acronym **PACELC** stand for?"
     options:

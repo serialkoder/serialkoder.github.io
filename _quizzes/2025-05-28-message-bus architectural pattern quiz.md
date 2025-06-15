@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Message-Bus Architectural Pattern Quiz"
+tags: [software-architecture]
 questions:
   - q: "1. Service A sends a message that exactly one instance of Service B should process, while Service C emits an event that multiple other services should react to. Which messaging pattern is appropriate for each scenario?"
     options:

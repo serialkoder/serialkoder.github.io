@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "CAP Theorem Quiz"
+tags: [system-design]
 questions:
   - q: "What does “CAP” stand for in the context of the CAP theorem?"
     options:

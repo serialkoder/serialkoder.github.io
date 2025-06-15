@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Web & Application Servers: Internal Architecture & Execution Models Quiz"
+tags: [software-architecture]
 questions:
   - q: "You built a web server that spawns a new thread for each client connection. As traffic grows to thousands of concurrent connections, you observe high memory usage and many threads sitting idle waiting for I/O. Which concurrency model would handle this situation more efficiently?"
     options:

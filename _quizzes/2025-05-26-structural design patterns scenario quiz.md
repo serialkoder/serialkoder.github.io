@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Structural Design Patterns Scenario Quiz"
+tags: [design-patterns]
 questions:
   - q: "You are designing a menu system for an application where a menu can contain menu items as well as sub-menus. A single call like display() or enable() should work uniformly on both. Which design pattern would you use?"
     options:

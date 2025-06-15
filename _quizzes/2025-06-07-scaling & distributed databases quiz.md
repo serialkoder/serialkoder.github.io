@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Scaling & Distributed Databases Quiz"
+tags: [system-design]
 questions:
   - q: "In a Dynamo-style system with N = 3 replicas, which R/W quorum pair guarantees that every read sees the latest successful write?"
     options:

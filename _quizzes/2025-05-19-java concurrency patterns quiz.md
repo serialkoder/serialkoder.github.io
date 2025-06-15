@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Java Concurrency Patterns Quiz"
+tags: [design-patterns]
 questions:
   - q: "Which method must be called on a Thread object to start a new thread of execution?"
     options:

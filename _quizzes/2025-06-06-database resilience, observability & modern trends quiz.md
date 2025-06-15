@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Database Resilience, Observability & Modern Trends Quiz"
+tags: [system-design]
 questions:
   - q: "[E] Which metric best indicates imminent WAL-archive saturation in a Postgres cluster?"
     options:

@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Pipes-and-Filters Pattern Quiz"
+tags: [software-architecture]
 questions:
   - q: "A team proposes adding data transformation logic into the pipe connecting two filters to lighten the filters’ workload. According to the pipes-and-filters pattern, what is the proper assignment of responsibilities?"
     options:

@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Structural Design Patterns Quiz"
+tags: [design-patterns]
 questions:
   - q: "Which pattern allows incompatible interfaces to work together?"
     options:

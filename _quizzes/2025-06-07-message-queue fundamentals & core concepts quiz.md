@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Message-Queue Fundamentals & Core Concepts Quiz"
+tags: [software-architecture]
 questions:
   - q: 'EASY: Which of the following best describes the difference between a message queue (point-to-point) and a topic (publish-subscribe)?'
     options:

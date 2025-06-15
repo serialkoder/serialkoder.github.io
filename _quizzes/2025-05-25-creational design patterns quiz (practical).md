@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Creational Design Patterns Quiz (Practical)"
+tags: [design-patterns]
 questions:
   - q: "In a cross-platform UI framework, the code needs to generate a family of related UI components (windows, buttons, menus) for different operating systems. Which creational design pattern is exemplified by this scenario?"
     options:

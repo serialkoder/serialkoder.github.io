@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Operational & Query-Planning Considerations Quiz"
+tags: [system-design]
 questions:
   - q: "Which consistency level provides the most up-to-date (strongest) read guarantees at the potential cost of higher latency or reduced availability?"
     options:

@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Creational Design Patterns Quiz (v2)"
+tags: [design-patterns]
 questions:
   - q: "What is the primary purpose of creational design patterns?"
     options:

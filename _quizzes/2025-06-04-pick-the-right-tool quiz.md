@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Pick-the-Right-Tool Quiz"
+tags: [thinking]
 questions:
   - q: "Your design review stalls because no one can plainly describe the new caching layer. Which framework will *most directly* unblock the meeting?"
     options:

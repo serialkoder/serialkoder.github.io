@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Database Foundations & Landscape Quiz"
+tags: [system-design]
 questions:
   - q: "Relational vs NoSQL Models: Which of the following correctly characterizes a key difference between relational databases and NoSQL databases?"
     options:

@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Behavioral Design Patterns Quiz"
+tags: [design-patterns]
 questions:
   - q: "What is the primary purpose of the Observer pattern?"
     options:

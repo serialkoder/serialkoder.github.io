@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "CDN Resilience, Security & Observability Quiz"
+tags: [system-design]
 questions:
   - q: "What does a CDN typically do as part of its auto fail-out/fail-in mechanism when a PoP (Point of Presence) is detected as unhealthy?"
     options:

@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Broker Architecture Pattern Quiz"
+tags: [software-architecture]
 questions:
   - q: "In a broker-based distributed system, a client invokes a remote service using a local proxy object. Which statement best describes the roles of the client proxy and server skeleton?"
     options:

@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Origins, Roles & Protocols of Web and Application Servers Quiz"
+tags: [software-architecture]
 questions:
   - q: "A developer is using Apache HTTP Server to serve images and static HTML files, while forwarding requests for dynamic API calls to a separate Node.js application server. What does this architecture illustrate?"
     options:
@@ -121,3 +122,4 @@ questions:
       - "A dedicated web server is required for any dynamic content"
       - "The Node.js server cannot handle high traffic without an Apache front-end"
     answer: 0
+---

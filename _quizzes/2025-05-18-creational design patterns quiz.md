@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Creational Design Patterns Quiz"
+tags: [design-patterns]
 questions:
   - q: "Which of the following is a creational design pattern?"
     options:

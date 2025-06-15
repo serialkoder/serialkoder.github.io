@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "CDN Foundations & Core Routing Quiz"
+tags: [system-design]
 questions:
   - q: "Why does fetching content from a distant origin server typically result in higher latency compared to using a nearby CDN edge server?"
     options:

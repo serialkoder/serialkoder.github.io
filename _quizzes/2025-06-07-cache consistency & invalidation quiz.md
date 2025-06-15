@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Cache Consistency & Invalidation Quiz"
+tags: [system-design]
 questions:
   - q: "EASY: Which statement accurately describes eventual consistency in a distributed cache?"
     options:

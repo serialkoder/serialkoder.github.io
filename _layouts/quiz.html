@@ -107,6 +107,18 @@ document.getElementById('check').onclick = () => {
     `You scored ${correct} / ${total}`;
 };
 </script>
-
+  {% comment %} ─────────────────────────────────────────────────────────
+  TAG “PILLS” — shown only when the quiz file has a tags: [...] list
+  ─────────────────────────────────────────────────────────────────── {% endcomment %}
+  {% if page.tags %}
+  <p style="margin-top:1.5rem">
+    {% for tag in page.tags %}
+    <a class="pill"
+       href="{{ '/quiz-tags/#' | append: tag | slugify | relative_url }}">
+      {{ tag }}
+    </a>
+    {% endfor %}
+  </p>
+  {% endif %}
 
 </article>

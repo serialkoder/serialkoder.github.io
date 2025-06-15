@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Data Modeling & Transaction Mechanics Quiz"
+tags: [system-design]
 questions:
   - q: "An application requires complex analytical queries on large datasets with relatively infrequent updates. To optimize query performance, how should the data be modeled?"
     options:

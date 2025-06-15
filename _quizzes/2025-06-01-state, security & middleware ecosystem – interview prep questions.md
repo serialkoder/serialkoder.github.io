@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "State, Security & Middleware Ecosystem – Interview Prep Questions"
+tags: [software-architecture]
 questions:
   - q: "A stateful web app runs on two servers behind a load balancer. Users report being logged out when their requests switch between servers. Session data is stored in-memory on each server. Which solution addresses this issue with minimal changes?"
     options:

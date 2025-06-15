@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "CDN Modern Extensions & Advanced Use-Cases Quiz"
+tags: [system-design]
 questions:
   - q: "In serverless edge computing, what does the term 'cold start' refer to?"
     options:
@@ -121,4 +122,4 @@ questions:
       - "Forces the CDN to revalidate the cached content with the origin server on every request"
       - "Instructs caches to store separate versions of the response based on specified request headers (e.g., Cookie, User-Agent)"
     answer: 3
---- 
+---

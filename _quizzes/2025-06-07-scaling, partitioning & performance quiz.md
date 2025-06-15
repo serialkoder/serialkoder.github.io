@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Scaling, Partitioning & Performance Quiz"
+tags: [system-design]
 questions:
   - q: "EASY: In a streaming system, which metric best indicates that consumers are not keeping up with producers?"
     options:

@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Cache Integration Patterns Quiz"
+tags: [system-design]
 questions:
   - q: "EASY: Which of the following is a drawback of using only client-side (local) caches compared to a distributed cache?"
     options:

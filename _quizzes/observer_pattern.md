@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Observer Pattern Quiz"
+tags: [design-patterns]
 questions:
   - q: "Which intent best describes the Observer pattern?"
     options:

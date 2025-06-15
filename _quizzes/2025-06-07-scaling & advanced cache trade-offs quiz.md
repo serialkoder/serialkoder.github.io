@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Scaling & Advanced Cache Trade-offs Quiz"
+tags: [system-design]
 questions:
   - q: "EASY: In a distributed caching cluster, what is a primary benefit of using consistent hashing for key distribution when resharding (adding or removing nodes)?"
     options:

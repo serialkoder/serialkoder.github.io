@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Broker Architecture Pattern Quiz V2"
+tags: [software-architecture]
 questions:
   - q: "Which component in the Broker pattern resides on the **client** side and handles marshalling of requests?"
     options:

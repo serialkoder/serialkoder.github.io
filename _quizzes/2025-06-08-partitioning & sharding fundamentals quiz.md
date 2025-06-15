@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Partitioning & Sharding Fundamentals Quiz"
+tags: [system-design]
 questions:
   - q: "Horizontal partitioning (dividing a table's rows across multiple servers) is commonly known as:"
     options:

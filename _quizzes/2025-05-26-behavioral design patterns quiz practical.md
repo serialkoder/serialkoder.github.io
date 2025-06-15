@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Behavioral Design Patterns Quiz Practical"
+tags: [design-patterns]
 questions:
   - q: "A navigation app allows users to choose different route calculation methods (fastest, shortest, scenic) at runtime without altering the app’s core logic. Which design pattern does this exemplify?"
     options:

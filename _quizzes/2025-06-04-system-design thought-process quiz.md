@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "System-Design Thought-Process Quiz"
+tags: [thinking]
 questions:
   - q: "Which activity best exemplifies the ‘Trade-off & Risk Ledger’ track?"
     options:

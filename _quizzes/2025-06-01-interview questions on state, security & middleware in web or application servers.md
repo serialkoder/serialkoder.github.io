@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Interview Questions on State, Security & Middleware in Web/Application Servers"
+tags: [software-architecture]
 questions:
   - q: "A web application is deployed on multiple servers behind a load balancer. Users report being logged out when their requests go to a different server. What is a quick, configuration-only solution to maintain session continuity for each user?"
     options:

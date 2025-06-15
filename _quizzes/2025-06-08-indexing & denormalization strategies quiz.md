@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Indexing & Denormalization Strategies Quiz"
+tags: [system-design]
 questions:
   - q: "Which index structure is optimized for high write throughput by batching writes and later merging data (compaction)?"
     options:

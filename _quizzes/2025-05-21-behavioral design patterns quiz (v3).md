@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Behavioral Design Patterns Quiz (v3)"
+tags: [design-patterns]
 questions:
   - q: "What is the primary focus of behavioral design patterns?"
     options:

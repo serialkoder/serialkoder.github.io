@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Traffic Distribution & Data-Path Mechanics in Load Balancers Quiz"
+tags: [system-design]
 questions:
   - q: "A load balancer uses round-robin to distribute requests to two servers. Server A has double the CPU and memory of Server B. Under round-robin, both servers get equal traffic and Server B overloads. Which algorithm would better utilize Server A’s extra capacity by sending it more requests?"
     options:
@@ -145,3 +146,4 @@ questions:
       - "Use a direct return (DSR) mode so the LB doesn’t track ports anymore."
       - "Turn off keep-alives so ports get freed immediately after each request."
     answer: 1
+---

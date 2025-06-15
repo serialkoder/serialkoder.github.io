@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "TCP Networking Quiz (Intermediate to Advanced)"
+tags: [system-design]
 questions:
   - q: "TCP is a reliable, connection-oriented transport protocol that ensures data is delivered in order and without errors between applications."
     options:

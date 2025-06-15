@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "CDN Architecture & Data-Path Mechanics Quiz"
+tags: [system-design]
 questions:
   - q: "Which of the following best describes a tiered caching architecture in a CDN (with edge, mid-tier, and origin shield layers)?"
     options:

@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Deployment, Scaling, Observability & Modern Web/Application Servers – Practice Questions"
+tags: [system-design]
 questions:
   - q: "A company has a web front-end in a public subnet (multiple instances) and an application tier in a private subnet (multiple instances). They want to evenly distribute requests at both tiers and ensure the app tier isn’t directly exposed to the internet. Which architecture meets these requirements?"
     options:

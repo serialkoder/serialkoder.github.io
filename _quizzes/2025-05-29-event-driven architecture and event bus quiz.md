@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Event-Driven Architecture & Event Bus Quiz"
+tags: [software-architecture]
 questions:
   - q: "In a microservices system, Service A triggers an event internally for its own workflow, while Service B emits an event to notify other services of a data change. What types of events are these respectively?"
     options:
@@ -121,3 +122,4 @@ questions:
       - "By automatically rolling back all previously completed service calls via the event bus"
       - "By locking all services involved until an operator manually fixes the inconsistency"
     answer: 0
+---

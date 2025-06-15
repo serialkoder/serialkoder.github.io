@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Cache Fundamentals & Design Goals Quiz"
+tags: [system-design]
 questions:
   - q: "EASY: Which of the following best describes temporal locality in the context of caching?"
     options:

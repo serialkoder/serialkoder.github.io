@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Concurrency Patterns Scenario Quiz"
+tags: [design-patterns]
 questions:
   - q: "In a networked printing system, multiple users submit print jobs that are placed in a queue, while a single printer processes them one at a time. Which concurrency pattern does this illustrate?"
     options:

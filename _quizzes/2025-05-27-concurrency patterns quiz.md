@@ -1,6 +1,8 @@
 ---
+
 layout: quiz
 title: "Concurrency Patterns Quiz"
+tags: [design-patterns]
 questions:
   - q: "Concurrency means tasks run at the exact same time on multiple CPU cores."
     options: ["True", "False"]

@@ -1,6 +1,7 @@
 ---
 layout: quiz
 title: "Union-Find (Disjoint-Set) Quick-Practice Quiz"
+tags: [data-structures-and-algorithms]
 questions:
   - q: "In a DSU that uses **path compression only** (no rank/size), what is the worst-case time to execute one `find(x)` *before* any path has been compressed?"
     options:
