@@ -53,6 +53,8 @@ Treat the array as a max-heap:
 Uses only `O(1)` extra space.
 
 ```python
+Bottom-up build (“heapify” → O(n))
+
 def heap_sort(arr):
     def sift_down(parent, end):
         # Re-heapify the subtree rooted at *parent* up to index *end*
@@ -78,6 +80,28 @@ def heap_sort(arr):
         sift_down(0, end - 1)                           # restore heap property
 
     return arr
+    
+
+Top-down build (“successive insert” → O(n log n))
+    
+def build_heap_top_down(data):
+    """Return a new list arranged as a max-heap by repeated insert-and-sift-up."""
+    heap = []
+
+    def sift_up(idx):
+        while idx:                         # bubble toward the root
+            parent = (idx - 1) // 2
+            if heap[parent] >= heap[idx]:  # already in heap order
+                break
+            heap[parent], heap[idx] = heap[idx], heap[parent]
+            idx = parent
+
+    for x in data:                         # insert elements one by one
+        heap.append(x)
+        sift_up(len(heap) - 1)
+
+    return heap
+    
 ```
 
 
