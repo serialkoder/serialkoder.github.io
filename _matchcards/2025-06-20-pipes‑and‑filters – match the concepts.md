@@ -1,0 +1,40 @@
+---
+layout: flashmatch
+title: "Pipes‑and‑Filters – Match the Concepts"
+intro: |
+  Drag‑or‑click each concept on the left to its definition on the right,
+  then press **Check answers** to see how you did.
+pairs:
+  - left: "Filter"
+    right: "Independent processing stage that performs one operation on the data"
+  - left: "Pipe"
+    right: "Conduit that transfers data records or messages between filters"
+  - left: "Pipeline Runner"
+    right: "Orchestrator that sets up, schedules, and coordinates the chain of filters and pipes"
+  - left: "Stateless Filter"
+    right: "Processes each input independently without retaining state, enabling easy parallelism"
+  - left: "Stateful Filter"
+    right: "Holds running aggregates or joins and must manage internal state and checkpoints"
+  - left: "Source Filter"
+    right: "Introduces external data into the pipeline; has no inbound pipe"
+  - left: "Sink Filter"
+    right: "Consumes final data and produces side‑effects such as database writes or API calls"
+  - left: "Push Dataflow"
+    right: "Upstream stage pushes data as soon as it’s ready, demanding explicit back‑pressure"
+  - left: "Pull Dataflow"
+    right: "Downstream stage requests data when ready, naturally throttling the flow"
+  - left: "Back‑Pressure"
+    right: "Feedback mechanism that slows producers when consumers fall behind"
+  - left: "Checkpointing"
+    right: "Periodic snapshot of state and offsets to enable recovery after failures"
+  - left: "Dead Letter Queue (DLQ)"
+    right: "Side channel that stores messages that repeatedly fail processing for later inspection"
+  - left: "Operator Fusion"
+    right: "Performance optimization that combines adjacent filters to avoid serialization overhead"
+  - left: "Chatty Pipes"
+    right: "Anti‑pattern where excessively small, frequent messages create high overhead"
+  - left: "Exactly‑Once Semantics"
+    right: "Guarantee that each input affects the outcome exactly once—no loss or duplication"
+  - left: "Poison Pill"
+    right: "Malformed or bad record that consistently fails a filter and can stall the pipeline"
+---
