@@ -13,6 +13,7 @@ Welcome to my reading log.
 * [Quiz&nbsp;Tags]({{ '/quiz-tags/' | relative_url }})
 * [Matching]({{ '/match/'       | relative_url }})
 * [Animations]({{ '/animations/' | relative_url }})
+* [Exercises]({{ '/exercise/' | relative_url }})
 
 ---
 

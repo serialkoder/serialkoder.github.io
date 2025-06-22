@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="markdown-body exercise">
+    <h2>{{ page.title }}</h2>
+
+    <!-- problem statement -->
+    {{ content }}
+
+    {% if page.hints %}
+    <details class="hints"><summary>Need a hint?</summary>
+        <ul>
+            {% for h in page.hints %}
+            <li>{{ h }}</li>
+            {% endfor %}
+        </ul>
+    </details>
+    {% endif %}
+
+    <!-- answer toggle -->
+    <button class="show-answer">Show answer</button>
+    <div class="answer" hidden>{{ page.answer | markdownify }}</div>
+
+    {% if page.tags %}
+    <p class="tag-row">
+        {% for tag in page.tags %}
+        <a class="pill" href="{{ '/tags/#' | append: tag | relative_url }}">{{ tag }}</a>
+        {% endfor %}
+    </p>
+    {% endif %}
+</article>

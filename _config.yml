@@ -20,7 +20,9 @@ collections:
   animations:
     output: true
     permalink: /animations/:name/
-
+  exercises:                      # ← NEW
+    output: true
+    permalink: /exercise/:title/  # → /exercise/<file>/
 
 # ▼ NEW – site-wide links
 navigation:
@@ -33,4 +35,6 @@ navigation:
   - title: Flashcards
     url: /flashcards/
   - title: Matching
-    url: /match/    
+    url: /match/
+  - title: Exercises
+    url: /exercise/

@@ -2,10 +2,15 @@
 
 <!-- ▸ Flash- / match-card assets -->
 <link rel="stylesheet" href="{{ '/assets/flashcards.css' | relative_url }}">
-<script  src="{{ '/assets/flashcards.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/flashcards.js' | relative_url }}" defer></script>
 
 <link rel="stylesheet" href="{{ '/assets/matchcards.css' | relative_url }}">
-<script  src="{{ '/assets/matchcards.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/matchcards.js' | relative_url }}" defer></script>
+
+<script src="{{ '/assets/exercises.js' | relative_url }}" defer></script>
+
+
+
 
 <!-- ▸ MathJax v3 – allows both $…$ and \( … \) -->
 <script>window.MathJax={ tex:{ inlineMath:[['$','$'],['\\(','\\)']] } };</script>
@@ -33,3 +38,9 @@
   .pill:hover{ background:#dde; }
 </style>
 
+<style>
+/* simple styling; adjust to taste */
+.markdown-body.exercise .hints summary { cursor:pointer; font-weight:600; }
+.answer       { margin-top:1rem; padding:0.75rem; background:#f8f8f8; border-left:4px solid #2da44e; }
+.show-answer  { margin-top:1rem; }
+</style>
