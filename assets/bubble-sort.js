@@ -28,6 +28,7 @@
 
   // ---------- bubble-sort animation ----------
   async function bubbleSort() {
+    Anim.lockControls(true);
     run.disabled = true;
     for (let i = 0; i < N; i++) {
       for (let j = 0; j < N - i - 1; j++) {
@@ -42,9 +43,10 @@
     }
     draw();
     run.disabled = false;
+    Anim.lockControls(false);
   }
 
-  const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+  const sleep = Anim.sleep;
 
   // ---------- wire-up ----------
   shuffle.onclick = randomize;

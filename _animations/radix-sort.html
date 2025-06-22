@@ -19,11 +19,12 @@ title: Radix Sort (LSD · base 10)
   {% endfor %}
 </div>
 
+<script src="{{ '/assets/anim-controls.js' | relative_url }}"></script>
 <script src="{{ '/assets/radix-sort.js' | relative_url }}"></script>
 
 <style>
-  /* array + bucket pill styling */
-  .array, .bucket-row { display:flex; gap:0.45rem; flex-wrap:wrap; }
+  /* existing cell styling stays unchanged ------------------------------ */
+  .array, .bucket-row { gap:0.45rem; flex-wrap:wrap; }
   .cell {
     min-width:2.6rem; padding:0.35rem 0; text-align:center;
     border-radius:6px; background:#457b9d; color:#fff;
@@ -31,10 +32,23 @@ title: Radix Sort (LSD · base 10)
   }
   .cell.highlight { background:#e63946; }
 
-  .buckets      { display:flex; flex-direction:column; gap:0.35rem; }
-  .bucket-row   { align-items:center; }
-  .bucket-row .label {
-    width:1.4rem; text-align:right; margin-right:0.25rem;
-    font-weight:700; color:#333;
+  /* NEW bucket layout --------------------------------------------------- */
+  .buckets {
+    display:flex;                   /* lay buckets side-by-side      */
+    gap:0.6rem;
+    align-items:flex-start;         /* align everything at the top   */
+  }
+  .bucket-row{
+    display:flex;                   /* stack vertically, natural order */
+    flex-direction:column;          /* (first append goes on top)      */
+    align-items:center;
+    min-height:8rem;                /* optional – visual height */
+    gap:0.35rem;
+  }
+  .bucket-row .label{
+    font-weight:700;
+    margin-bottom:0.35rem;          /* space between digit and values */
+    color:#333;
   }
 </style>
+
