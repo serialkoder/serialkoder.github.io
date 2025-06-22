@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Message-Bus Architecture Deck"
+tags: [software-architecture]
 intro: |
   Forty concise cards on the principles, patterns, and operational realities of
   message buses. Click a question to test yourself—click again to reveal the

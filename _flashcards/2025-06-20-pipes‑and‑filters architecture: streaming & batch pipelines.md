@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Pipes‑and‑Filters Architecture: Streaming & Batch Pipelines"
+tags: [software-architecture]
 intro: |
   Core ideas, benefits, design choices, and common pitfalls of the Pipes‑and‑Filters pattern.
   Click a question to reveal the answer.

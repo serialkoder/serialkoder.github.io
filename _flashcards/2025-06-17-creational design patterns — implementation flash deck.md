@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Creational Design Patterns — Implementation Flash Deck"
+tags: [design-patterns]
 intro: |
   Nail the *how* behind the five classic GoF creational patterns.  
   Each card focuses on a common implementation pitfall or decision,
@@ -127,5 +128,4 @@ cards:
     a: |
       **Pros:** zero boilerplate, compile-time safety.  
       **Cons:** adds Lombok dependency & generated code magic, harder debugging if bytecode differs from source.
-
 ---

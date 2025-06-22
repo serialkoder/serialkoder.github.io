@@ -1,5 +1,4 @@
 ---
-
 layout: quiz
 title: "Observer Pattern Quiz"
 tags: [design-patterns]

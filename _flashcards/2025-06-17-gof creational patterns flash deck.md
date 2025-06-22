@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "GoF Creational Patterns Flash Deck"
+tags: [design-patterns]
 intro: |
   Quick-fire revision cards covering the five classic “Gang of Four” creational patterns—
   **Singleton, Factory Method, Abstract Factory, Builder, and Prototype**.

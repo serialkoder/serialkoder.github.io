@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Broker Pattern Flash Deck"
+tags: [software-architecture]
 intro: |
   Quick revision deck covering the Broker architecture pattern — foundations, components, invocation
   flow, scalability, security, observability, pitfalls, and best practices. Click a question to

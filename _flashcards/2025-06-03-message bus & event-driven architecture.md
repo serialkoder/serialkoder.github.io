@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Message Bus & Event-Driven Architecture"
+tags: [software-architecture]
 intro: |
   A comprehensive deck covering core message bus concepts, delivery guarantees, reliability patterns,
   distributed transactions, schema versioning, observability, pitfalls, and real-world implementations.

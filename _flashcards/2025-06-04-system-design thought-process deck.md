@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "System-Design Thought-Process Deck"
+tags: [thinking]
 intro: |
   Twelve quick-hit cards that cover the core concurrent tracks senior engineers keep
   in mind when designing or building systems. Click a question to see the answer.

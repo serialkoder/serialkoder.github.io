@@ -1,10 +1,20 @@
 ---
 layout: default
-title: "Flashcard Decks"
+title: "Flashcard Decks by Tag"
 ---
 
+{% assign all_tags =
+site.flashcards | map:"tags" | join:"," | split:"," | uniq | sort %}
+
+{% for tag in all_tags %}
+{% assign decks = site.flashcards
+| where_exp:"d","d.tags contains tag" %}
+{% if decks.size > 0 %}
+<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
 <ul>
-{% for q in site.flashcards %}
-  <li><a href="{{ q.url | relative_url }}">{{ q.title }}</a></li>
-{% endfor %}
+  {% for deck in decks %}
+  <li><a href="{{ deck.url | relative_url }}">{{ deck.title }}</a></li>
+  {% endfor %}
 </ul>
+{% endif %}
+{% endfor %}

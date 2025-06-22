@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Thinking Frameworks – Rapid-Recall Deck"
+tags: [thinking]
 intro: |
   Five go-to reasoning tools. Flip each card to refresh *when* and *why* to deploy it.
 cards:

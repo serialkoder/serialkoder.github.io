@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Data-Modeling & Transaction Mechanics Deck"
+tags: [system-design]
 intro: |
   Key trade-offs, patterns, and pitfalls every architect should recall on-demand.  
   Tap a question to reveal its answer.
@@ -90,5 +91,4 @@ cards:
 
   - q: "Read replica caveat to call out?"
     a: "Staleness — enforce read-your-writes or route user-critical reads to primary."
-
 ---

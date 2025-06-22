@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Thinking Frameworks Field Guide"
+tags: [thinking]
 intro: |
   A quick‑hit deck covering key ideas from **“Thinking Frameworks: An Exhaustive Field Guide.”**
   Click a question to reveal the answer and sharpen your toolkit.

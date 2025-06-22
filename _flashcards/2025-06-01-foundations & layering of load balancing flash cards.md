@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Foundations & Layering of Load Balancing"
+tags: [system-design]
 intro: |
   A comprehensive deck covering key concepts, motivations, and techniques in load balancing.
 cards:
