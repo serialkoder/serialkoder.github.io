@@ -1,0 +1,40 @@
+---
+layout: animation
+title: Radix Sort (LSD · base 10)
+---
+
+<!-- live array -->
+<div id="radix-array" class="array"></div>
+
+<div style="margin:0.8rem 0">
+  <button id="radix-shuffle">Shuffle</button>
+  <button id="radix-run">Run Sort</button>
+</div>
+
+<!-- digit buckets -->
+<h3 style="margin:1rem 0 0.2rem">Buckets (current digit)</h3>
+<div id="buckets" class="buckets">
+  {% for d in (0..9) %}
+  <div class="bucket-row" data-digit="{{ d }}"><span class="label">{{ d }}:</span></div>
+  {% endfor %}
+</div>
+
+<script src="{{ '/assets/radix-sort.js' | relative_url }}"></script>
+
+<style>
+  /* array + bucket pill styling */
+  .array, .bucket-row { display:flex; gap:0.45rem; flex-wrap:wrap; }
+  .cell {
+    min-width:2.6rem; padding:0.35rem 0; text-align:center;
+    border-radius:6px; background:#457b9d; color:#fff;
+    font:600 0.9rem/1 monospace; transition:background .2s;
+  }
+  .cell.highlight { background:#e63946; }
+
+  .buckets      { display:flex; flex-direction:column; gap:0.35rem; }
+  .bucket-row   { align-items:center; }
+  .bucket-row .label {
+    width:1.4rem; text-align:right; margin-right:0.25rem;
+    font-weight:700; color:#333;
+  }
+</style>

@@ -1,0 +1,13 @@
+---
+layout: default          # keeps header / footer
+title: Animations
+permalink: /animations/  # nice URL (no .html at the end)
+---
+
+<h2>Algorithm Visualisations</h2>
+
+<ul>
+    {% for demo in site.animations %}
+    <li><a href="{{ demo.url | relative_url }}">{{ demo.title }}</a></li>
+    {% endfor %}
+</ul>

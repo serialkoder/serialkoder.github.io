@@ -17,6 +17,10 @@ collections:
   matchcards:                # ← new
     output: true
     permalink: /match/:title/
+  animations:
+    output: true
+    permalink: /animations/:name/
+
 
 # ▼ NEW – site-wide links
 navigation:

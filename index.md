@@ -7,11 +7,12 @@ title: Home
 Welcome to my reading log.
 
 ### Quick links
-* [Tags]({{ '/tags/'       | relative_url }})
+* [Tags]({{ '/tags/'            | relative_url }})
 * [Flashcards]({{ '/flashcards/' | relative_url }})
-* [Quizzes]({{ '/quiz/'    | relative_url }})
-* [Quiz&nbsp;Tags]({{ '/quiz-tags/' | relative_url }})  <!-- NEW -->
-* [Matching]({{ '/match/'  | relative_url }})
+* [Quizzes]({{ '/quiz/'         | relative_url }})
+* [Quiz&nbsp;Tags]({{ '/quiz-tags/' | relative_url }})
+* [Matching]({{ '/match/'       | relative_url }})
+* [Animations]({{ '/animations/' | relative_url }})
 
 ---
 
