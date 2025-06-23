@@ -1,6 +1,7 @@
 ---
 layout: flashdeck
 title: "Sample System-Design Deck"
+tags: [system-design]
 intro: |
   Quick demo deck — click each question to reveal the answer.
 cards:
