@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Service-Oriented Architecture: Contract-Driven Decoupling at Enterprise Scale"
-tags: [software-architecture]
+tags: [software-architecture-pattern]
 ---
-
 Understood. I’ll write a technical executive overview titled “Service-Oriented Architecture: Contract-Driven Decoupling at Enterprise Scale” targeting intermediate-to-advanced software engineers.
 
 It will feature problem-solution storytelling, concise headings, and cover all 11 required technical bullets, including a `plantuml` diagram and key takeaways.

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Pipes-and-Filters Architecture: Building Streaming & Batch Pipelines"
-tags: [software-architecture]
+tags: [software-architecture-pattern]
 ---
-
 Great. I’ll create a modular executive overview titled “Pipes-and-Filters Architecture: Building Streaming & Batch Pipelines” with a narrative, problem-solution style, targeting intermediate-to-advanced engineers. The overview will hit all 13 required bullets, include a TL;DR, a GitHub Pages–friendly PlantUML diagram, and a concise “Key Take-aways” section. I’ll keep technology examples light and define any advanced terms.
 
 I’ll let you know when it’s ready for your review.

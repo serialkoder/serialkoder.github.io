@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Event-Driven Architecture & the Event Bus: Reacting at Scale"
-tags: [software-architecture]
+tags: [software-architecture-pattern]
 ---
-
 Understood. I’ll craft a technical, vendor-neutral executive overview titled “Event-Driven Architecture & the Event Bus: Reacting at Scale” aimed at intermediate-to-advanced engineers. It will follow a problem-solution narrative, cover all 14 specified points, include a `plantuml` diagram, and end with concise takeaways.
 
 I’ll notify you as soon as the full piece is ready for review.

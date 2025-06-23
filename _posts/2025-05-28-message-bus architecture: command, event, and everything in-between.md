@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Message-Bus Architecture: Command, Event, and Everything in-Between"
-tags: [software-architecture]
+tags: [software-architecture-pattern]
 ---
-
 Got it. I’ll prepare an executive overview titled “Message-Bus Architecture: Command, Event, and Everything in-Between,” tailored for intermediate-to-advanced software engineers prepping for system-design interviews.
 
 I’ll walk through the problem-solving narrative format and cover all the specified technical points, including diagrams and a vendor-neutral tone except in the real-world snapshots.

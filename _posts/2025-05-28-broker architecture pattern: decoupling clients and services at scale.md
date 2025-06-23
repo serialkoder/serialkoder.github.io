@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Broker Architecture Pattern: Decoupling Clients and Services at Scale"
-tags: [software-architecture]
+tags: [software-architecture-pattern]
 ---
-
 Great. I’ll draft a 1,000–1,200 word executive overview titled **“Broker Architecture Pattern: Decoupling Clients and Services at Scale”**, targeting intermediate-to-advanced software engineers preparing for system design interviews.
 
 The article will:

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Peer-to-Peer Architecture: Decentralised Discovery, Storage & Compute at Internet Scale"
-tags: [software-architecture, distributed-systems, peer-to-peer]
+tags: [software-architecture-pattern]
 ---
-
 Great. I’ll write a 1,000–1,200-word executive overview titled “Peer-to-Peer Architecture: Decentralised Discovery, Storage & Compute at Internet Scale,” tailored for intermediate-to-advanced software engineers preparing for system design interviews.
 
 This will include:

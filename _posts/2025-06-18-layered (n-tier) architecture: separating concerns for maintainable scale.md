@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Layered (N-Tier) Architecture: Separating Concerns for Maintainable Scale"
-tags: [software-architecture, layered-architecture, n-tier]
+tags: [software-architecture-pattern]
 ---
-
 Great. I’ll write a vendor-agnostic executive overview titled “Layered (N-Tier) Architecture: Separating Concerns for Maintainable Scale,” structured for intermediate-to-advanced software engineers. It will follow a problem-solution narrative style and hit all 12 of your specified bullets, include a TL;DR and PlantUML diagram, and conclude with succinct key takeaways.
 
 I’ll let you know when the draft is ready for review.
