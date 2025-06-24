@@ -4,6 +4,8 @@ description: "Deep-dive reading log & research notes"
 remote_theme: pages-themes/primer
 
 markdown: CommonMarkGhPages
+commonmark:
+  extensions: ["table", "strikethrough", "autolink"]
 plugins:
   - jekyll-remote-theme
 
