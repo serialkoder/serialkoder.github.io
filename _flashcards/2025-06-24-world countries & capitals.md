@@ -346,8 +346,6 @@ cards:
       a: "Port of Spain"
     - q: "What is the capital of the United States?"
       a: "Washington, D.C."
-
-  Oceania:
     - q: "What is the capital of Australia?"
       a: "Canberra"
     - q: "What is the capital of Fiji?"
