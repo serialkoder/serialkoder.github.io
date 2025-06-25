@@ -6,7 +6,6 @@ intro: |
   UN-member (plus a few widely-recognized) countries grouped by continent.  
   Click a question to reveal the capital.
 cards:
-  Africa:
     - q: "What is the capital of Algeria?"
       a: "Algiers"
     - q: "What is the capital of Angola?"
@@ -115,8 +114,6 @@ cards:
       a: "Lusaka"
     - q: "What is the capital of Zimbabwe?"
       a: "Harare"
-
-  Asia:
     - q: "What is the capital of Afghanistan?"
       a: "Kabul"
     - q: "What is the capital of Armenia?"
@@ -213,8 +210,6 @@ cards:
       a: "Hanoi"
     - q: "What is the capital of Yemen?"
       a: "Sana'a"
-
-  Europe:
     - q: "What is the capital of Albania?"
       a: "Tirana"
     - q: "What is the capital of Andorra?"
@@ -305,8 +300,6 @@ cards:
       a: "London"
     - q: "What is the capital of Vatican City?"
       a: "Vatican City"
-
-  North America:
     - q: "What is the capital of Antigua and Barbuda?"
       a: "Saint John's"
     - q: "What is the capital of the Bahamas?"
@@ -383,8 +376,6 @@ cards:
       a: "Funafuti"
     - q: "What is the capital of Vanuatu?"
       a: "Port Vila"
-
-  South America:
     - q: "What is the capital of Argentina?"
       a: "Buenos Aires"
     - q: "What is the capital of Bolivia?"
