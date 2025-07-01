@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Communication Playbook: Matching Styles to Scenarios"
-tags: [communication]
+tags: [communication,soft-skills]
 ---
 
 Great, I’ll create a communication playbook tailored to mid- to senior-level professionals in the tech industry. It will map common scenarios to effective communication styles, grounded in both academic research and practitioner insights. I’ll incorporate the most suitable frameworks and tools for each case and present everything in a structured Markdown format, including a realistic annotated dialogue.
