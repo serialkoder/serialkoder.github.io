@@ -1,7 +1,7 @@
 ---
 layout: flashdeck
 title: "Code‑Review Checklist Deck"
-tags: [code-review, best-practices]
+tags: [checklists]
 intro: |
   Single deck covering the full checklist.  
   The first card gives the high‑level mnemonic; the next four drill into each bucket.

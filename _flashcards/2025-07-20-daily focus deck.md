@@ -1,7 +1,7 @@
 ---
 layout: flashdeck
 title: "Daily Focus Deck"
-tags: [routine, engineering, health, productivity]
+tags: [productivity]
 intro: |
   One deck to rule the day.  
   Flip through every morning (≈ 2‑3 min) to lock in the habits, heuristics,
