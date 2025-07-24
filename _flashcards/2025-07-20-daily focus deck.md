@@ -32,6 +32,8 @@ cards:
     a: "**cline** for deep dives + IntelliJ for coding; refine docs with Claude."
   - q: "Core mindset during work hours?"
     a: "Hyper‑focus on execution; eliminate wasted motion."
+  - q: "Mindset shift for the AI age?"
+    a: "Double‑down on deep comprehension, first‑principles thinking, and relentless problem‑finding/solving."
 
   # ‣ Execution & impact
   - q: "Guiding question when choosing projects?"
